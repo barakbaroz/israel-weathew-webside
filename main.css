@@ -50,6 +50,12 @@ table {
   Custom styles
   ========================================
 */
+.center{
+  width: 98%;
+  margin: 0 auto;
+
+
+}
 body {
 text-align: right;
 
@@ -66,6 +72,23 @@ text-align: right;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
 /* 
 ======================================
 access
@@ -73,16 +96,31 @@ access
 */
 .access
 {
-  margin-bottom: 32px
+  margin-bottom: 32px;
+
+}
+#access{
+ 
+  
+  display: inline-block;
 }
  #access-button{
+  display: inline-block;
     font-family: Arial;
     font-size: 16px;
-    padding: 7px;
+    padding:7px 7px 7px 7px;
     background: #003466;
     color: #FFF;
     
      }
+   /*
+===================================
+   position
+===================================
+  */
+.pos{
+  position:relative;
+}
   /*
   ================================
   link
@@ -91,7 +129,8 @@ access
   a{
     cursor: pointer;
   }
-  /*
+
+   /*
 ==================================
 logo
 ==================================
@@ -102,7 +141,94 @@ logo
 #top-ad{
   float: right;
 }
-   
+/*
+================================
+nav
+=================================
+*/
+.top-nav{
+  vertical-align: middle;
+  background-color: rgb(218, 218, 218);
+  height: 35px;
+  line-height: 35px;
+  margin-top:15px ;
+  border-bottom: 1px solid #fff;
+}
+
+  .top-nav a{
+  font-family: Arial;
+  font-size: 16px;
+  TEXT-DECORATION: none;
+  font-weight: bold;
+  color: red;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-left: 1px solid #fff;
+ 
+}
+ #facebook{
+ position:absolute;
+ right: 715px;
+ top: 10px;
+ padding-left: 7px;
+ padding-right: 7px;
+ border-left: 1px solid #fff;
+}
+#english{
+
+  position:absolute;
+  right: 795px;
+  top: 10px;
+  height: 17px;
+  line-height: 17px;
+  padding-right: 7px;
+  padding-left: 7px;
+  border-left:none;
+}
+/*
+=============================
+second top nav
+=============================
+*/
+.second-top-nav{
+  background-color: rgb(120, 153, 215);
+  height: 35px;
+  line-height: 35px;
+}
+
+.second-top-nav a{
+
+  float:right;
+  font-family: Arial;
+  font-size: 14px;
+  TEXT-DECORATION: none;
+  color: white;
+  margin-left: 9%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#google{
+  position:absolute;
+  right: 1200px;
+  top: 0px;
+  padding-right: 7px;
+  padding-left: 7px;
+  width:98.5px;
+  height:30px;
+
+}
+#apple{
+  position:absolute;
+  right: 1500px;
+  top: 0px;
+  padding-right: 7px;
+  padding-left: 7px;
+  width:108.5px;
+  height:30px;
+ 
+}
+
+ 
  
     
 
